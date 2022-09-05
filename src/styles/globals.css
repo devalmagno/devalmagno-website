@@ -1,0 +1,26 @@
+:root {
+  --dark-blue: #1A1B21;
+  --highlight: #F3BF99;
+  --icon: #918E9B;
+  --icon-hover: #767382;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: #fff;
+
+  background: #23252C;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  overflow: hidden;
+}

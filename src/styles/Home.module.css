@@ -1,0 +1,52 @@
+.container {
+    position: relative;
+
+    width: 100vw;
+    height: 100vh;
+
+    background: url('/images/background.png') no-repeat;
+
+}
+
+.container section {
+    width: 100%;
+    height: 100%;
+    padding: 0 118px;
+
+    overflow-y: scroll;
+}
+
+.projects {
+    margin-top: 1rem;
+    max-width: 842px;
+    width: 100%;
+    height: 422px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 24px;
+
+    overflow-x: scroll;
+}
+
+.projects::-webkit-scrollbar {
+    background: #23252C;
+    height: 12px;
+    border-radius: 12px 12px 0 0;
+}
+
+.projects::-webkit-scrollbar-thumb {
+    background: var(--dark-blue);
+    border-radius: 12px 12px 0 0;
+}
+
+@media (max-width: 700px) {
+    .container section {
+        padding: 0 24px;
+    }
+
+    .projects {
+        height: 200px;
+    }
+}

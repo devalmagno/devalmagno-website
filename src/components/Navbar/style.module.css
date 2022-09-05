@@ -1,0 +1,40 @@
+.navbar {
+    width: 100%;
+    text-transform: uppercase;
+    /* padding: 0 118px; */
+}
+
+.navbar ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    align-items: center;
+    justify-content: flex-start;
+
+    font-weight: 500;
+
+    padding: 0;
+}
+
+.navbar ul li {
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.navbar ul li:hover {
+    transform: scale(1.05);
+    color: var(--highlight);
+}
+
+.navbar ul .selected {
+    font-size: 18px;
+
+    color: var(--highlight);
+    font-weight: bold;
+}
+
+@media (max-width: 700px) {
+    .navbar ul {
+        justify-content: center;
+    }
+}

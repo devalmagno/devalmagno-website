@@ -1,0 +1,39 @@
+.sidebar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+
+    width: 80px;
+    height: 100%;
+
+    background: var(--dark-blue);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.sidebar__icon {
+    font-size: 30px;
+    color: var(--icon);
+    transition: all .3s ease;
+}
+
+.sidebar__icon:hover {
+    color: var(--icon-hover);
+
+    transform: scale(1.1);
+}
+
+@media (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: 80px;
+
+        flex-direction: row;
+    }
+}
