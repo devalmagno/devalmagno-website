@@ -22,17 +22,6 @@ export default function Navbar(props: NavbarProps) {
 
                 <li
                     className={
-                        props.selectedTab == "skills" ?
-                            styles.selected :
-                            ''
-                    }
-                    onClick={() => props.toggleSelectedTab("skills")}
-                >
-                    habilidades
-                </li>
-
-                <li
-                    className={
                         props.selectedTab == "about" ?
                             styles.selected :
                             ''
@@ -42,7 +31,7 @@ export default function Navbar(props: NavbarProps) {
                     sobre mim
                 </li>
 
-                <li
+                {/* <li
                     className={
                         props.selectedTab == "contact" ?
                             styles.selected :
@@ -51,7 +40,7 @@ export default function Navbar(props: NavbarProps) {
                     onClick={() => props.toggleSelectedTab("contact")}
                 >
                     contato
-                </li>
+                </li> */}
             </ul>
         </nav >
     );

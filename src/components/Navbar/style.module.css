@@ -2,6 +2,7 @@
     width: 100%;
     text-transform: uppercase;
     /* padding: 0 118px; */
+    position: relative;
 }
 
 .navbar ul {
